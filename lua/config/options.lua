@@ -6,3 +6,11 @@ vim.opt.number = true
 vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes"
 
+-- 搜索忽略大小写
+
+vim.opt.ignorecase = true
+
+-- 大写搜索
+
+vim.opt.smartcase = true
+
