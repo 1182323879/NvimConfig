@@ -15,9 +15,6 @@ vim.opt.relativenumber = true
 --[光标行]
 vim.opt.cursorline = true
 
---[鼠标插入]
-vim.opt.mouse:append("a")
-
 --[大写搜索]
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
