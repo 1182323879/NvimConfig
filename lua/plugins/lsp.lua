@@ -72,17 +72,17 @@ return {
         config = function()
           require("mason").setup()
           require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "pyright", "tsserver", "gopls", "rust_analyzer", "clangd", "bashls", "awk_ls", "jsonls", "yamlls" }, -- 添加你需要的 LSP 服务器
+            ensure_installed = { "lua_ls",  "clangd", "bashls", "awk_ls", "jsonls", "yamlls" }, -- 添加你需要的 LSP 服务器
           })
         end,
       },
     },
-    opts = function()
+	config = function()
       local lspconfig = require("lspconfig")
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       -- 设置 LSP 服务器
-      local servers = { "lua_ls", "pyright", "tsserver", "gopls", "rust_analyzer", "clangd", "bashls", "awk_ls", "jsonls", "yamlls" }
+      local servers = { "lua_ls", "clangd", "bashls", "awk_ls", "jsonls", "yamlls" }
       for _, server in ipairs(servers) do
         lspconfig[server].setup({
           capabilities = capabilities,
