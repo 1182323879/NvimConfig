@@ -1,6 +1,7 @@
 return {
     "nvim-neo-tree/neo-tree.nvim",
-    keys = { {"<leader>t" , "<cmd>Neotree toggle<cr>", desc = "NeoTree" }, },
+    --keys = { {"<leader>t" , "<cmd>Neotree toggle<cr>", desc = "NeoTree" }, },
+    keys = { {"<leader>t" , "<cmd>Neotree toggle<cr>" } },
     config = function()
 	    require("neo-tree").setup()
     end,
