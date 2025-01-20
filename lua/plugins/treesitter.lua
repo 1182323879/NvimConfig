@@ -2,7 +2,7 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	config = function()
 	require'nvim-treesitter.configs'.setup {
-		ensure_installed = "all",
+		ensure_installed = { "c", "bash", "lua" },
 		auto_install = true,
 		highlight = { enable = true, },
 		indent = { enable = true },
